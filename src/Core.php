@@ -107,4 +107,13 @@ class Core
         }
         return false;
     }
+    public function use_auth(array $data=[], int $status=403, string $message="Unauthorized")
+    {
+        $token = $GLOBALS['AUTH_TOKEN'];
+        $token = $this->validate_token($token);
+        if(!$token) {
+            $this->set_response($data, $status, $message);
+            exit;
+        }
+    }
 }
