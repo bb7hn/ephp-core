@@ -1,0 +1,6 @@
+<?php
+
+function {{helper_name}}()
+{
+    return 'this is an example helper';
+}

@@ -1,0 +1,20 @@
+{
+    "name": "batuhanozen/ephp-core",
+    "description": "ephp core class",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "ephp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Batuhan Özen",
+            "email": "iletisim@batuhanozen.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.4"
+    }
+}
